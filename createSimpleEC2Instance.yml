@@ -1,0 +1,11 @@
+---
+# Create a simple VM
+
+- name: Create a simple VM instance
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Deploy new VM instance
+      gce:
+        instance_names: "{{ vm_instance_name }}"
+        zone: us-central1-a
