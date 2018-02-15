@@ -11,11 +11,11 @@
   
     - name: Sending confirmation email
       mail:
-        host: smtp.gmail.com
-        port: 587
-        username: rafael.cardona.it@gmail.com
-        password: Sawq1212
+        host: 127.0.0.1
+        port: 2025
         to: Rafael Cardona <lab.services.ota@gmail.com>
+        from: jane@example.net (Jane Jolie)
         subject: Ansible-report
-        body: 'System orestes has been successfully provisioned.'
+        body: 'Your requested system has been successfully provisioned.'
+        charset: utf8
       delegate_to: localhost
