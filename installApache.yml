@@ -4,7 +4,7 @@
 - name: This sets up an httpd webserver
   hosts: "{{ server_instance }}"
   connection: ssh
-  become_method : sudo
+  #become_method : sudo
   gather_facts : yes
   tasks:
 #   - name: Install the httpd package
@@ -19,8 +19,6 @@
 #     service: name=firewalld state=restarted
 #   - name: start the firewalld service
 
-    - name : Connect to the remote host and executing yum updates
-      yum : name=* state=latest
     - name : Installing HTTPD Server
       yum : name=httpd state=latest
 #    - name : Deploy the static website
