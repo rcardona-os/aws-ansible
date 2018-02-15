@@ -27,4 +27,4 @@
         to: John Smith <lab.services.ota@gmail.com>
         subject: Ansible-report
         body: 'System orestes has been successfully provisioned.'
-        delegate_to: localhost
+      delegate_to: localhost
