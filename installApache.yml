@@ -6,7 +6,7 @@
   connection: local
   tasks:
    - name: start the firewalld service
-     shell: yum install httpd -y
+     shell: /bin/yum install httpd -y
 #  - name: Install the httpd rpm
 #    yum: name=httpd
    - name: start the httpd service
