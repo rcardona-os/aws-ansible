@@ -13,6 +13,6 @@
         wait: yes
         group: webserver
         count: 3
-        vpc_subnet_id: default
+        vpc_subnet_id: us-east-1a
         assign_public_ip: yes
         region: us-east-1
