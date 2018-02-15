@@ -11,7 +11,7 @@
         port: 587
         username: "{{ username_gmail }}"
         password: "{{ mysecret }}"
-        to: "{{ recipient_email }"
+        to: "{{ recipient_email }}"
         subject: Ansible-report
         body: 'Your requested system has been successfully provisioned.'
       delegate_to: localhost
