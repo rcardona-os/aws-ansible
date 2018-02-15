@@ -5,17 +5,13 @@
   hosts: localhost
   connection: local
   tasks:
-#    - ec2_instance_facts:
-#      filters:
-#      "tag:Name": orestes
-  
     - name: Sending confirmation email
       mail:
-        host: localhost
-        port: 25
-        to: Rafael Cardona <lab.services.ota@gmail.com>
-        from: jane@example.net (Jane Jolie)
+        host: smtp.gmail.com
+        port: 587
+        username: {{ username_gmail }}
+        password: {{ mysecret }}
+        to: {{ recipient_email }}
         subject: Ansible-report
         body: 'Your requested system has been successfully provisioned.'
-        #charset: utf8
       delegate_to: localhost
