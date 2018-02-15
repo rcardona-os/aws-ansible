@@ -16,4 +16,5 @@
         count: 1
         vpc_subnet_id: subnet-04a18f4f
         assign_public_ip: yes
+        security_group: server
         region: us-east-1
