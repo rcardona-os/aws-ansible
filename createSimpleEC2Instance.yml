@@ -17,3 +17,15 @@
         vpc_subnet_id: subnet-04a18f4f
         assign_public_ip: yes
         region: us-east-1
+        instance_tags:
+          name: orestes
+
+-   mail:
+        host: smtp.gmail.com
+        port: 587
+        username: rafael.cardona.it@gmail.com
+        password: Sawq1212
+        to: John Smith <lab.services.ota@gmail.com>
+        subject: Ansible-report
+        body: 'System {{ name }} has been successfully provisioned.'
+        delegate_to: localhost
