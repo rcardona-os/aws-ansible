@@ -17,8 +17,7 @@
         vpc_subnet_id: subnet-04a18f4f
         assign_public_ip: yes
         region: us-east-1
-        instance_tags:
-          name: orestes
+        name: orestes
 
     - name: Sending confirmation email 
       mail:
