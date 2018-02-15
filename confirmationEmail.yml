@@ -5,9 +5,9 @@
   hosts: localhost
   connection: local
   tasks:
-    - ec2_instance_facts:
-      filters:
-      "tag:Name": orestes
+#    - ec2_instance_facts:
+#      filters:
+#      "tag:Name": orestes
   
     - name: Sending confirmation email
       mail:
