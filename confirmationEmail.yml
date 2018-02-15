@@ -11,11 +11,11 @@
   
     - name: Sending confirmation email
       mail:
-        host: 127.0.0.1
-        port: 2025
+        host: localhost
+        port: 25
         to: Rafael Cardona <lab.services.ota@gmail.com>
         from: jane@example.net (Jane Jolie)
         subject: Ansible-report
         body: 'Your requested system has been successfully provisioned.'
-        charset: utf8
+        #charset: utf8
       delegate_to: localhost
