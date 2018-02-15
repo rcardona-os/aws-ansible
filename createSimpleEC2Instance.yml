@@ -11,7 +11,7 @@
       ec2:
         key_name: mykey
         instance_type: t2.micro
-        image: ami-97785bed
+        image: ami-26ebbc5c
         wait: yes
         count: 1
         vpc_subnet_id: subnet-04a18f4f
