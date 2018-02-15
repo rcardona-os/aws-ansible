@@ -17,14 +17,3 @@
         vpc_subnet_id: subnet-04a18f4f
         assign_public_ip: yes
         region: us-east-1
-
-    - name: Sending confirmation email 
-      mail:
-        host: smtp.gmail.com
-        port: 587
-        username: rafael.cardona.it@gmail.com
-        password: Sawq1212
-        to: John Smith <lab.services.ota@gmail.com>
-        subject: Ansible-report
-        body: 'System orestes has been successfully provisioned.'
-      delegate_to: localhost
