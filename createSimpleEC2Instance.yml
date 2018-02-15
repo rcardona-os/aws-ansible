@@ -27,5 +27,5 @@
         password: Sawq1212
         to: John Smith <lab.services.ota@gmail.com>
         subject: Ansible-report
-        body: 'System {{ name }} has been successfully provisioned.'
+        body: 'System orestes has been successfully provisioned.'
         delegate_to: localhost
