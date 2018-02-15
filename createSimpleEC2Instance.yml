@@ -11,7 +11,6 @@
         instance_type: t2.micro
         image: ami-97785bed
         wait: yes
-        group: webserver
         count: 3
         vpc_subnet_id: subnet-04a18f4f
         assign_public_ip: yes
