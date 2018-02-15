@@ -1,19 +1,21 @@
 ---
-# Create a simple VM
-# It will create with the default security group which will by rule no outside world access de facto
-# So in other to ssh / http to the server it will require configure the proper security groups.
+# Send confirmation email when the previous task has run successfully
 
 - name: Confirmation of deployment
   hosts: localhost
   connection: local
   tasks:
+    - ec2_instance_facts:
+      filters:
+      "tag:Name": orestes
+  
     - name: Sending confirmation email
       mail:
         host: smtp.gmail.com
         port: 587
         username: rafael.cardona.it@gmail.com
         password: Sawq1212
-        to: John Smith <lab.services.ota@gmail.com>
+        to: Rafael Cardona <lab.services.ota@gmail.com>
         subject: Ansible-report
         body: 'System orestes has been successfully provisioned.'
       delegate_to: localhost
