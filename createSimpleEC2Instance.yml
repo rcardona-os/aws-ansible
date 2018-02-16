@@ -14,7 +14,8 @@
         image: ami-26ebbc5c
         wait: yes
         count: 1
-        vpc_subnet_id: subnet-04a18f4f
+        #vpc_subnet_id: subnet-04a18f4f
+        vpc_subnet_id: "{{ id_subnet }}"
         assign_public_ip: yes
         group: server
         region: us-east-1
