@@ -1,0 +1,11 @@
+---
+# Registering an event in CF
+
+- name: Create a issue
+  uri:
+    url: https://{{cfme}}/api/automation_requests
+    method: POST
+    user: cfuser
+    password: cfpassword
+    body: "{ "version" : "1.1", "uri_parts" : { "namespace" : "mytest/General", "class" : "Methods", "instance" : "notifyEvent" }, "requester" : { "user_name" : "admin", "auto_approve" : true } }"
+    body_format: json
