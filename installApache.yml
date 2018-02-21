@@ -2,37 +2,16 @@
 # Install and setup http webserver
 
 - name: This sets up an httpd webserver
-  hosts: "{{ server_instance }}"
+  #hosts: "{{ server_instance }}"
+  hosts: localhost
   connection: ssh
   remote_user: ec2-user
   become_method : sudo
   become: yes
   gather_facts : yes
   tasks:
-#   - name: Install the httpd package
-#     shell: /bin/yum install httpd -y
-#  - name: Install the httpd package
-#    yum: name=httpd
-#   - name: start the httpd service
-#     service: name=httpd state=started
-#   - name: Open port 80
-#     firewalld: service=http permanent=true state=enabled
-#   - name: start the firewalld service
-#     service: name=firewalld state=restarted
-#   - name: start the firewalld service
-
     - name : Installing HTTPD Server
       yum : name=httpd state=latest
-#    - name : Deploy the static website
-#      copy : src=../files/index.html dest=/var/www/html/index.html owner=centos group=centos mode=0655 backup=yes
     - name : Restart the HTTPD Service
       service: name=httpd state=restarted
-#    - name : Wait for the HTTPD port 80 to be listening
-#      wait_for : host=ec2-54-152-85-197.compute-1.amazonaws.com
-#    - name : Installing WGET to test the site
-#      yum : name=wget state=latest
-#    - name : Test the site
-#      shell : /usr/bin/wget http://localhost
-#      register : site_result
-#    - name : Display the site output results
-#      debug : var=site_result
+
