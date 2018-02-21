@@ -1,0 +1,17 @@
+---
+# Send confirmation email when the previous task has run unsuccessfully
+
+- name: Confirmation of deployment
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Sending confirmation email
+      mail:
+        host: smtp.gmail.com
+        port: 587
+        username: "{{ username_gmail }}"
+        password: "{{ mysecret }}"
+        to: "{{ recipient_email }}"
+        subject: Ansible-report
+        body: 'Your requested system has been UNSUCCESSFUL. Deatils of failure: ##### TO BE ADDED ####'
+      delegate_to: localhost
