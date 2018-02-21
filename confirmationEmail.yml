@@ -13,5 +13,5 @@
         password: "{{ mysecret }}"
         to: "{{ recipient_email }}"
         subject: Ansible-report
-        body: 'Your requested system has been successfully provisioned.'
+        body: 'Your requested system has been successfully provisioned. And your provisioned systems are:'
       delegate_to: localhost
