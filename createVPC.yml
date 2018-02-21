@@ -1,0 +1,11 @@
+---
+ - name: Create a Scenario 2 VPC with public and private subnets in two AZs
+   hosts: localhost
+   connection: local
+   gather_facts: yes
+     tasks:
+      - name: Sending confirmation email
+        ec2_vpc:
+          state: present
+          cidr_block: 172.23.0.0/16
+          region: eu-west-1
