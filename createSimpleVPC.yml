@@ -1,4 +1,4 @@
-    
+# Creating simple VPC
 - name: Create a simple VM instance
   hosts: localhost
   connection: local
