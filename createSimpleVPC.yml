@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Here it comes
+=======
+# Creating simple VPC
+>>>>>>> 5fd4742d1d53027234582a8c944fcaa3c595ea94
 - name: Create a simple VM instance
   hosts: localhost
   connection: local
