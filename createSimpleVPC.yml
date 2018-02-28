@@ -1,4 +1,4 @@
-    
+# Here it comes
 - name: Create a simple VM instance
   hosts: localhost
   connection: local
