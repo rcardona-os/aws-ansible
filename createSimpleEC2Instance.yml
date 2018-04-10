@@ -18,4 +18,4 @@
         #vpc_subnet_id: "{{ id_subnet }}"
         assign_public_ip: yes
         group: server
-        region: us-east-1
+        region: eu-central-1
