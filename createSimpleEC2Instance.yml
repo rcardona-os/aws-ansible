@@ -9,7 +9,7 @@
   tasks:
     - name: Deploy new VM instance
       ec2:
-        key_name: mykey
+        key_name: mykeyaws
         instance_type: t2.micro
         image: ami-26ebbc5c
         wait: yes
