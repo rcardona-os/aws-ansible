@@ -6,6 +6,7 @@
 - name: Create a simple VM instance
   hosts: localhost
   connection: local
+  gather_facts: no
   tasks:
     - name: Deploy new VM instance
       ec2:
