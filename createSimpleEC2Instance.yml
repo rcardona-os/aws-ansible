@@ -17,5 +17,5 @@
         vpc_subnet_id: subnet-23af3748
         #vpc_subnet_id: "{{ id_subnet }}"
         assign_public_ip: yes
-        group: server
+        group: linuxserverSG
         region: eu-central-1
