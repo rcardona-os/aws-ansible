@@ -14,8 +14,11 @@
         image: ami-ac442ac3
         wait: yes
         count: 1
-        vpc_subnet_id: subnet-23af3748
-        #vpc_subnet_id: "{{ id_subnet }}"
+        #vpc_subnet_id: subnet-23af3748
+        vpc_subnet_id: "{{ id_subnet }}"
         assign_public_ip: yes
-        group: linuxserverSG
+        #group: linuxserverSG
+        group: "{{ group_name }}"
         region: eu-central-1
+        instance_tags:
+          app: "{{  app_name }}"
