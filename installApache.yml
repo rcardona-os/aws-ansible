@@ -1,7 +1,7 @@
 ---
 # Install and setup http webserver
 
-- name: This sets up an httpd webserver
+- name: This sets up a httpd webserver
   #hosts: "{{ server_instance }}"
   hosts: all
   connection: ssh
