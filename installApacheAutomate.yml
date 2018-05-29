@@ -2,8 +2,9 @@
 # Install and setup http webserver
 
 - name: This sets up a httpd webserver
-  hosts: "{{ serverInstance }}"
+  #hosts: "{{ serverInstance }}"
   #hosts: all
+  hosts: localhost
   connection: ssh
   remote_user: ec2-user
   become_method : sudo
