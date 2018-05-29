@@ -1,10 +1,14 @@
 ---
 # Install and setup http webserver
 
+- name: Comenzando playbook
+  hosts: all
+  tasks:
+    - debug:
+        msg: "Here starts the seeking"
+        
 - name: This sets up a httpd webserver
-  hosts: "{{ serverInstance }}"
-  #hosts: all
-  #hosts: localhost
+  hosts: "{{ the_host }}"
   connection: ssh
   remote_user: ec2-user
   become_method : sudo
