@@ -16,11 +16,11 @@
   manageiq_automate:
     workspace: "{{ workspace }}"
     get_state_var:
-    attribute: "e2_ip_new"
-  register: "e2_ip_new"
+    attribute: "e2_ip"
+  register: "e2_ip"
   
 - name: Real installation a httpd webserver
-  hosts: "{{ e2_ip_new }}"
+  hosts: "{{ e2_ip }}"
   tasks:
     - name: Installing HTTPD Server
       yum: 
