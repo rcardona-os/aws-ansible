@@ -17,7 +17,7 @@
         count: 1
         vpc_subnet_id: subnet-23af3748
         assign_public_ip: yes
-        group: "{{ group_name }}"
+        group_id: "{{ group_id }}"
         region: eu-central-1
         instance_tags:
           app: "{{  app_name }}"
