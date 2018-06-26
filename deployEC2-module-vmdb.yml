@@ -10,7 +10,7 @@
   - auto_commit: true
   - manageiq_validate_certs: false
   - manageiq_connection:
-      url: 'https://{{ cf_host }}:3000'
+      url: 'https://{{ cf_host }}'
       username: 'admin'
       password: 'smartvm'
       manageiq_validate_certs: false
