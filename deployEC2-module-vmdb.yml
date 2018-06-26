@@ -9,6 +9,11 @@
   vars:
   - auto_commit: true
   - manageiq_validate_certs: false
+  - manageiq_connection:
+      url: 'https://{{ cf_host}}.ssl:3000'
+      username: 'admin'
+      password: 'smartvm'
+      manageiq_validate_certs: false
   
   roles:
   - syncrou.manageiq-vmdb
