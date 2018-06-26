@@ -10,7 +10,7 @@
   - auto_commit: true
   - manageiq_validate_certs: false
   - manageiq_connection:
-      url: 'https://104.155.125.180'
+      url: 'https://203.75.125.88'
       username: 'admin'
       password: 'smartvm'
       manageiq_validate_certs: false
