@@ -25,7 +25,7 @@
   
   - name: Get a vmdb object
     manageiq_vmdb:
-      href: "services/150"
+      href: "services/151"
     register: vmdb_object
           
   - name: Deploy new VM instance
