@@ -10,7 +10,7 @@
   - auto_commit: true
   - manageiq_validate_certs: false
   - manageiq_connection:
-      url: 'https://112.98.175.180'
+      url: 'https://104.155.125.180'
       username: 'admin'
       password: 'smartvm'
       manageiq_validate_certs: false
@@ -25,7 +25,7 @@
   
   - name: Get a vmdb object
     manageiq_vmdb:
-      href: "services/151"
+      href: "services/152"
     register: vmdb_object
           
   - name: Deploy new VM instance
