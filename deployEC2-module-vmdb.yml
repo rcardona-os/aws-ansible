@@ -25,7 +25,7 @@
   
   - name: Get a vmdb object
     manageiq_vmdb:
-      href: "services/10000000000150"
+      href: "services/150"
     register: vmdb_object
           
   - name: Deploy new VM instance
@@ -51,4 +51,4 @@
         uid_ems:
           - "{{ ec2.instances[0].id }}"
         provider:
-          id: 10000000000057
+          id: 57
